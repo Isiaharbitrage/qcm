@@ -21,8 +21,19 @@
   <!-- Espace de création -->
   <div id="admin-section">
     <div class="page-title">
-      <h1>Nouveau <span class="accent">QCM</span></h1>
-      <p>10 questions vrai/faux. Sélectionne la bonne réponse pour chaque question, ou importe un QCM complet au format JSON.</p>
+      <h1>Espace <span class="accent">prof</span></h1>
+      <p>Gère les QCM déjà publiés, ou crée-en un nouveau (10 questions vrai/faux).</p>
+    </div>
+
+    <div class="card" style="margin-bottom: 20px;">
+      <h3 style="margin-bottom:6px;">QCM existants</h3>
+      <div id="quiz-list"><p class="helper-text">Chargement…</p></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="page-title" style="margin-top:0;">
+      <h2 id="form-title">Nouveau <span class="accent">QCM</span></h2>
     </div>
 
     <div id="admin-alert"></div>
@@ -51,6 +62,7 @@
 
     <div class="btn-row">
       <button id="submit-quiz" class="btn btn-primary">Publier le QCM</button>
+      <button id="cancel-edit-btn" class="btn btn-ghost" style="display:none;">Annuler la modification</button>
     </div>
   </div>
 
