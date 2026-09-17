@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Espace prof — QCM Hebdo</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="index.html" class="brand"><span class="dot"></span> QCM Hebdo</a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="stats.html">Stats</a>
+  </div>
+</nav>
+
+<div class="wrapper">
+
+  <!-- Espace de création -->
+  <div id="admin-section">
+    <div class="page-title">
+      <h1>Nouveau <span class="accent">QCM</span></h1>
+      <p>10 questions vrai/faux. Sélectionne la bonne réponse pour chaque question, ou importe un QCM complet au format JSON.</p>
+    </div>
+
+    <div id="admin-alert"></div>
+
+    <div class="card" style="margin-bottom: 20px;">
+      <h3 style="margin-bottom:6px;">Import rapide (JSON)</h3>
+      <p style="margin-top:0;">Colle un QCM complet au format JSON pour le publier en un clic, sans remplir le formulaire question par question.</p>
+      <div class="field">
+        <textarea id="import-json" rows="6" placeholder='{"titre": "...", "questions": [{"texte": "...", "reponse": true, "explication": "..."}, ...]}'></textarea>
+      </div>
+      <div id="import-alert"></div>
+      <button id="import-btn" class="btn btn-ghost">Importer et publier</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="field" style="margin-bottom:0;">
+        <label for="quiz-title">Titre du QCM</label>
+        <input type="text" id="quiz-title" placeholder="Ex : Interprétations FIBA 2026" />
+        <p class="helper-text" id="quiz-numero-preview"></p>
+      </div>
+    </div>
+
+    <div id="questions-container"></div>
+
+    <div class="btn-row">
+      <button id="submit-quiz" class="btn btn-primary">Publier le QCM</button>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">QCM Hebdo — Espace prof</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="js/app-admin.js"></script>
+</body>
+</html>
