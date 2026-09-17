@@ -16,12 +16,12 @@
    ======================================================= */
 
 const firebaseConfig = {
-  apiKey: "REMPLACE_MOI",
-  authDomain: "REMPLACE_MOI.firebaseapp.com",
-  projectId: "REMPLACE_MOI",
-  storageBucket: "REMPLACE_MOI.appspot.com",
-  messagingSenderId: "REMPLACE_MOI",
-  appId: "REMPLACE_MOI"
+  apiKey: "AIzaSyBZVKzKKwXgmlj8ikREFdXkH7PQFUD525Y",
+  authDomain: "qcmbasket.firebaseapp.com",
+  projectId: "qcmbasket",
+  storageBucket: "qcmbasket.firebasestorage.app",
+  messagingSenderId: "21050951258",
+  appId: "1:21050951258:web:3cc90457e7fca8df74ba63"
 };
 
 firebase.initializeApp(firebaseConfig);
